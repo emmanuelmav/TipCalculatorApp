@@ -1,0 +1,286 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: hsl(185, 41%, 84%);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Space Mono', sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin: 5rem;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.app-container {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    margin-bottom: 4rem;
+
+}
+
+.bill-container {
+    margin-bottom: 3rem;
+}
+
+.bill {
+    margin-bottom: .5rem;
+    color: hsl(186, 14%, 43%);
+    transition: all .3s ease;
+}
+
+.bill:hover {
+    color: hsl(183, 100%, 15%);
+}
+
+.bill-dollar {
+    position: relative;
+    /* border: 2px solid black; */
+}
+
+
+.dollar {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+input {
+
+    border: none;
+    width: 100%;
+    height: 3rem;
+    background-color: hsl(189, 41%, 97%);
+    text-align: end;
+    padding: 2.5rem 2rem 2.5rem 0rem;
+    font-size: 3rem;
+    font-family: 'Space Mono', sans-serif;
+    color: hsl(183, 100%, 15%);
+
+}
+
+/* input:hover {
+    cursor: pointer;
+} */
+
+input:focus {
+    outline: 2px solid hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+/* .input {
+    color: #c92432;
+    background-color: #c92432;
+} */
+
+/* TIP SECTION  */
+
+.tip-container {
+    margin-bottom: 3rem;
+}
+
+.tip {
+    margin-bottom: 1.6rem;
+    color: hsl(186, 14%, 43%);
+    transition: all .3s ease;
+}
+
+.tip:hover {
+    color: hsl(183, 100%, 15%);
+}
+
+.percent-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    gap: 1.5rem;
+}
+
+.percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.percent-grid div:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.color {
+    background-color: hsl(172, 67%, 45%);
+}
+
+
+
+/* .custom {} */
+
+.custom-input {
+    font-size: 2.4rem;
+}
+
+/* NUMBER OF PEOPLE  */
+
+.people-container {
+    margin-bottom: 3rem;
+}
+
+.people {
+    color: hsl(186, 14%, 43%);
+    margin-bottom: .5rem;
+    transition: all .3s ease;
+}
+
+.people:hover {
+    color: hsl(183, 100%, 15%);
+}
+
+
+.person-number {
+    position: relative;
+}
+
+/* .person-number[data-error]::after {
+    content: attr(data-error);
+    font-size: .85rem;
+    color: #c92432;
+    display: block;
+    margin: 1rem 0;
+} */
+
+.icon-person {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+/* CALCULATOR SECTION */
+
+/* || TIP AMOUNT || */
+.calculator-wrapper {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+    padding: 4rem 2.5rem;
+}
+
+.flex-tip-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.tip-amount {
+    color: hsl(0, 0%, 100%);
+
+}
+
+.person {
+    color: hsl(184, 14%, 56%);
+    font-size: 1.2rem;
+}
+
+
+.tip-display {
+    color: hsl(172, 67%, 45%);
+    font-size: 3rem;
+}
+
+/* || TOTAL DISPLAY || */
+
+.flex-total-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.total {
+    color: hsl(0, 0%, 100%);
+}
+
+.reset-btn {
+    width: 100%;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    padding: 1.5rem 0;
+    border-radius: .6rem;
+    color: hsl(183, 100%, 15%);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.reset-btn:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.reset-btn:active {
+    transform: scale(.95);
+}
+
+
+
+/* ------------MEDIA QUERIES-------- */
+
+@media only screen and (min-width: 49rem) {
+    .app-container {
+        background-color: white;
+        border-radius: 2rem;
+        padding: 2rem 3rem;
+        width: 900px;
+        margin: 0 auto 4rem auto;
+
+    }
+
+    .left-wrapper {
+        width: 50%;
+    }
+
+    .form {
+        display: flex;
+        gap: 3rem
+    }
+
+    .percent-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 40px);
+        gap: 1.5rem;
+    }
+
+
+
+
+    .calculator-wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
