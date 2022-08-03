@@ -31,4 +31,4 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
-- Weights: 700
+- Weights: 700, 400
